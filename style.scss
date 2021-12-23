@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap');
+
+html, body{
+    box-sizing: border-box;
+    font-family: 'Roboto', cursive;
+
+}
+
+.vote{
+    display: block;
+    text-align: center;
+
+    h1{
+       font-size: 4em;
+       width: 90%;
+       font-size: 800;
+       margin-top: 45vh;
+       margin-bottom: 45vh;
+       margin-left: auto;
+       margin-right: auto;
+      
+    }
+
+    &__top{
+        width: 700px;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+
+        &__element{
+            flex: 1;
+            border-radius: 15px;
+            height: 300px;
+            text-align: center;
+            position: relative;
+            box-shadow: 0px 5px 28px #00000029;
+            background-color: white;
+        
+            img{
+                width: 100%;
+                height: 100px;
+                border-top-left-radius:  15px ;
+                border-top-right-radius:  15px ;
+            }
+
+            h2{
+                margin: 15px auto;
+            }
+
+            p{
+                margin: 10px auto;
+                font-size: 1em;
+                font-weight: bold;
+            }
+
+            button{
+                width: 140px;
+                height: 40px;
+                border: 1px black solid;
+                font-size: 1em;
+                margin: auto;
+                cursor: pointer;
+                border-radius: 20px;
+                text-align: center;
+                background-color: rgba(28,31,73,255);
+                border-color: rgba(28,31,73,255);
+                color: rgb(25, 206, 122);
+                font-weight: bold;
+
+                a{
+                    color: rgb(25, 206, 122);
+                    text-decoration: none;
+                }
+            }
+
+            button:hover{
+                filter: brightness(1.3);
+            }
+
+            .prize{
+                width: 60px;
+                height: 60px;
+                border-radius: 30px;
+                position: absolute;
+                left: 0; 
+                right: 0; 
+                margin-left: auto; 
+                margin-right: auto; 
+                bottom: -30px;
+                box-shadow: 0px 5px 28px #00000029;
+                background-color: white;
+            
+                text-align: center;
+
+                i{
+                    font-size: 2em;
+                    font-weight: bold;
+                    margin: 15px auto;
+                    color: #838280;
+                }
+
+                .first{
+                    color: #e7b119;
+                }
+
+                .third{
+                    color: #8d5b40;
+                }
+    
+            }
+        }
+
+        .first{
+            margin-top: -20px;
+        }
+    }
+
+    &__bottom{
+        width: 650px;
+        height: auto;
+        padding-bottom: 50px;
+        padding-top: 40px;
+        border-radius: 15px;
+        margin: 70px auto;
+        box-shadow: 0px 5px 28px #46454529;
+        background-color: white;    
+        margin-bottom: 30px;
+        position: relative;
+
+        &__element{
+            width: 90%;
+            margin: auto;
+            height: 60px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border-bottom: 2px grey solid;
+            position: relative;
+            
+            .rank{
+                margin: auto 0;
+                display: grid;
+               
+            }
+
+            img{
+                width: 40px;
+                height: 20px;
+                margin: auto 30px;
+                position: absolute;
+                left: 0;
+                top: 20px;
+            }
+
+            .country{
+                font-size: 1.2em;
+                left: 120px;
+                position: absolute;
+            }
+
+            .donation{
+                margin: auto 10px auto auto;
+                font-size: 1.1em;
+                font-weight: 400;
+                padding-top: 5px;
+                width: 100%;
+                vertical-align: middle;
+                display: table-cell;
+                position: absolute;
+                top:15px;
+                right: 20px;
+            }
+
+            button{
+                width: 260px;
+                height: 40px;
+                border: 1px black solid;
+                font-size: 1em;
+                margin: auto;
+                border-radius: 20px;
+                text-align: center;
+                background-color: rgba(28,31,73,255);
+                border-color: rgba(28,31,73,255);
+                font-weight: bold;  
+                cursor: pointer;      
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                
+                a{
+                    color: rgb(25, 206, 122);
+                    text-decoration: none;
+                }
+            }
+
+            button:hover{
+                filter: brightness(1.3);
+            }
+        }
+
+        .more{          
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            position: absolute;
+            cursor: pointer;
+            left: 0; 
+            right: 0;
+            background-color: rgba(28,31,73,255);
+            margin-left: auto; 
+            margin-right: auto; 
+            bottom: -20px;
+
+            i{
+               
+                border-color: rgba(28,31,73,255);
+                color: rgb(25, 206, 122);
+                font-weight: bold;    
+            }
+
+        }
+
+        .more:hover{
+            filter: brightness(1.3);
+        }
+    }  
+    
+    &__search{
+        form{
+            input{
+
+            }
+
+            button{
+                margin: 10px auto;
+                border-radius: 15px;
+                height: 30px;
+                cursor: pointer ;
+                width: 120px;
+                background-color: rgba(28,31,73,255);
+                border-color: rgba(28,31,73,255);
+                font-weight: bold;  
+                cursor: pointer;       
+                color: white;
+                font-weight: bold;
+                font-size: 1.1em;
+                color: rgb(25, 206, 122);
+            }
+
+            button:hover{
+                filter: brightness(1.1);
+            }
+        }
+    }
+
+    ul li{
+        display: inline;
+        margin: 10px auto;
+        position: relative;
+        text-align: left;
+
+        img{
+            margin: auto 10px auto 0;
+        }
+
+        button{
+            margin: 10px auto;
+            border-radius: 15px;
+            left: 50px;
+            height: 30px;
+            cursor: pointer ;
+            width: 120px;
+            background-color: rgba(28,31,73,255);
+            border-color: rgba(28,31,73,255);
+            font-weight: bold;  
+            cursor: pointer;       
+            color: white;
+            font-weight: bold;
+            font-size: 1.1em;
+            color: rgb(25, 206, 122);
+
+            a{
+                color: rgb(25, 206, 122);
+                text-decoration: none;
+            }
+        }
+
+        button:hover{
+            filter: brightness(1.1);
+        }
+    }
+}
+
+/*responsiver for 1280px*/
+@media screen and (min-width: 1280px) {
+    .vote{
+        &__top{
+            width: 800px;
+        }
+
+        &__bottom{
+            width: 750px;
+        }
+    }
+
+}
+
+/*responsiver for 1024pxpx*/
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    .vote{
+        &__top{
+            width: 800px;
+        }
+
+        &__bottom{
+            width: 750px;
+        }
+    }
+
+}
+
+/*responsiver for 768pxpx*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .vote{
+        &__top{
+            width: 600px;
+
+            &__element{
+                height: 280px;
+                img{
+                    height: 110px;
+                }
+
+                h2{
+                    font-size: 1.1em;
+                }
+
+                p{
+                    font-size: 0.9em;
+                }
+
+                button{
+                    height: 30px;
+                }
+            }
+        }
+
+        &__bottom{
+            width: 550px;
+
+            .country{
+                left :100px;
+            }
+            .donation{
+                margin-left: 350px;
+            }
+
+            button{
+            font-size: 0.7em;
+            height: 30px;
+            width: 120px;
+            margin-left: 0;
+            }
+        }
+    }
+
+}
+
+/*responsiver for 576px*/
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .vote{
+
+        h1{
+            font-size: 2.7em;
+        }
+
+        &__top{
+            width: 550px;
+          }
+
+            &__element{
+                height: 230px;
+                img{
+                    height: 80px;
+                }
+
+                h2{
+                    font-size: 1em;
+                }
+
+                p{
+                    font-size: 0.9em;
+                }
+
+                button{
+                    height: 30px;
+
+                   
+                }
+            }
+        
+
+        &__bottom{
+            width: 500px;
+            overflow: hidden;
+            
+
+           &__element{
+               width: 100%;
+                .country{
+                    margin-right: 30px;
+                }
+                .donation{
+                    right: -50px;
+                }
+
+                button{
+                    font-size: 0.7em;
+                    height: 30px;
+                    width: 120px;
+                    margin-left: 0;
+                    top: 20px;
+                    }
+           }
+        }
+    }
+    }
+
+/*responsive for 350pxpx*/
+@media screen and (min-width: 350px) and (max-width: 575px) {
+    .vote{
+        h1{
+            font-size: 2em;
+            width: 80%;
+            text-align: center;
+        }
+        &__top{
+            width: 330px;
+
+            &__element{
+                height: 170px;
+                img{
+                    height: 60px;
+                }
+
+                h2{
+                    font-size: 0.7em;
+                }
+
+                p{
+                    font-size: 0.6em;
+                }
+
+                button{
+                    height: 20px;
+                    width: 90px;
+                    font-size: 0.5em;
+                }
+
+                .prize{
+                    width: 40px;
+                    height: 40px;
+
+                    i{
+                        font-size: 1.1em;
+                    }
+                }
+            }
+        }
+
+        &__bottom{
+            width: 340px;
+            padding-top: 20px;
+
+           &__element{
+               padding-left: 0;
+
+            .rank{
+                font-size: 0.8em;
+                margin: auto 5px;
+            }
+
+            img{
+                width: 20px;
+                height: 15px;
+                margin: auto 5px;
+            }
+
+            .country{
+                font-size: 0.8em;
+                padding-top: 8px;
+                left: 40px;
+            }
+
+            .donation{
+               font-size: 0.7em;
+               width: 100%;
+               right: 0px;
+               top: 17px;
+            }
+
+            button{
+                height: 20px;   
+                width: 90px;
+                top: 15px;
+                padding-bottom: 25px;
+
+                a{
+                font-size: 0.5em;
+                }
+                }
+           }
+        }
+
+     
+
+        ul li{
+            button{
+                font-size: 0.9em;
+            }
+        }
+    }
+}
